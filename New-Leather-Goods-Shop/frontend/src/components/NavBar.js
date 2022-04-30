@@ -18,7 +18,7 @@ import ContactUs from '../pages/ContactUs';
     const handleShow = () => setShow(true);
 
     const fetchProducts = async () => {
-        const result = await axios.get('https://sergeyitaly.pythonanywhere.com/products/');
+        const result = await axios.get('https://bezditniy.pythonanywhere.com/products/');
         console.log(result.data)
         setProducts(result.data)}
     useEffect(() => {fetchProducts()}, []);

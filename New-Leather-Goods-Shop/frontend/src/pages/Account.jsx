@@ -7,7 +7,7 @@ const Account = () => {
 
     const Logout = async (e) => {
             localStorage.clear();
-            window.location.replace('https://sergeyitaly.pythonanywhere.com/shop');
+            window.location.replace('https://bezditniy.pythonanywhere.com/shop');
         };
 
     return (

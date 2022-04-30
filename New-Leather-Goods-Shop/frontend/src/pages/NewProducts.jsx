@@ -12,7 +12,7 @@ function NewProducts() {
     const [products, setProducts] = useState([])
 
     const fetchProducts = async () => {
-        const result = await axios.get('https://sergeyitaly.pythonanywhere.com/products/');
+        const result = await axios.get('https://bezditniy.pythonanywhere.com/products/');
         console.log(result.data)
         setProducts(result.data)}
 
@@ -21,7 +21,7 @@ function NewProducts() {
     const [categories, setCategories] = useState([])
 
     const fetchCategories = async () => {
-        const result = await axios.get('https://sergeyitaly.pythonanywhere.com/categories/');
+        const result = await axios.get('https://bezditniy.pythonanywhere.com/categories/');
         console.log(result.data)
         setCategories(result.data)}
 

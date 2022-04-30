@@ -11,9 +11,9 @@ const Reset= () => {
     const history = useNavigate ();
 
     const Passwordretype = (e) => {
-        Axios.post('https://sergeyitaly.pythonanywhere.com/auth/users/reset_password_confirm/', { uid: uid, token: token, new_password: formNewPassword})
+        Axios.post('https://bezditniy.pythonanywhere.com/auth/users/reset_password_confirm/', { uid: uid, token: token, new_password: formNewPassword})
                 .then(() => {history.push('/login')})
-                window.location.replace('https://sergeyitaly.pythonanywhere.com/shop');
+                window.location.replace('https://bezditniy.pythonanywhere.com/shop');
 
             };
     return (

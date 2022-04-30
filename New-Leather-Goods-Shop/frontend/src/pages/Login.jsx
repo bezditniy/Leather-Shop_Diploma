@@ -20,7 +20,7 @@ export default function Login () {
 
        useEffect(() => {
         if (access) {
-                fetch('https://sergeyitaly.pythonanywhere.com/api/user',
+                fetch('https://bezditniy.pythonanywhere.com/api/user',
                     {headers: {'Content-Type': 'application/json;charset=utf-8',
                       'Authorization': `Bearer ${access}`,},}
                 )

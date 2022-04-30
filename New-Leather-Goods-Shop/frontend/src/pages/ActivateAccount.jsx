@@ -11,7 +11,7 @@ const ActivateAccount = () => {
     const history = useNavigate ();
 
     const activeClick = (e) => {
-        Axios.post('https://sergeyitaly.pythonanywhere.com/auth/users/activation/', { uid: uid, token: token})
+        Axios.post('https://bezditniy.pythonanywhere.com/auth/users/activation/', { uid: uid, token: token})
             .then(() => {history.push('/login')})};
     useEffect(() => {activeClick();}, [])
     return (

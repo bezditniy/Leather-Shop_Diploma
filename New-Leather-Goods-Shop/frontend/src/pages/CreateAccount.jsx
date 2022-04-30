@@ -14,7 +14,7 @@ function CreateAccount () {
     const submitHandler = e => {
         e.preventDefault();
         setLoading(true);
-        fetch('https://sergeyitaly.pythonanywhere.com/auth/users/',
+        fetch('https://bezditniy.pythonanywhere.com/auth/users/',
             {method: 'POST',
             headers: {'Content-Type': 'application/json;charset=utf-8'},
             body: JSON.stringify({
@@ -24,7 +24,7 @@ function CreateAccount () {
                 re_password: formPassword2})})
    .then(response => {
        if (response.ok) {
-                window.location.replace('https://sergeyitaly.pythonanywhere.com/shop')
+                window.location.replace('https://bezditniy.pythonanywhere.com/shop')
                 return response.json()
             }
             else {throw Error(`Maybe here: code ${response.status}`)}
