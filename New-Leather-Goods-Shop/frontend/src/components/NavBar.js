@@ -64,7 +64,7 @@ import ContactUs from '../pages/ContactUs';
                 <Navbar.Toggle style={{background: "none", boxShadow: "none"}} aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto">
-                        <Nav.Link href="/" className="hover-txt ps-xl-4">Home</Nav.Link>
+                        <Nav.Link href="/" className="hover-txt ps-xl-4">Hom</Nav.Link>
                         <Nav.Link href="/shop" className="hover-txt ps-xl-4">Shop</Nav.Link>
                         <Nav.Link href="/about" className="hover-txt ps-xl-4">About</Nav.Link>
                         <Nav.Link href="/lookbook" className="hover-txt ps-xl-4">LookBook</Nav.Link>
