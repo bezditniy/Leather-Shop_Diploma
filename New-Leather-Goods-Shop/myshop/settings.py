@@ -151,7 +151,7 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
 
-DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3','NAME': '/home/sergeyitaly/mysite/New-Leather-Goods-Shop/db.sqlite3',}}
+DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3','NAME': '/home/bezditniy/mysite/Leather-Shop_Diploma/New-Leather-Goods-Shop/db.sqlite3',}}
 #DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.mysql',
