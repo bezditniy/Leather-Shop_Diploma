@@ -7,21 +7,14 @@ import {HiOutlinePlus, HiOutlineMinus} from "react-icons/hi";
 import ContactUs from '../pages/ContactUs';
 
 
- function Navibar({productItem, onRemoveFromCart, onAddToCart, deleteFromCart}) {
+ function Navibar({productItem, products, onRemoveFromCart, onAddToCart, deleteFromCart}) {
 
     const [show, setShow] = useState(false);
-    const [products, setProducts] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [wordEntered, setWordEntered] = useState("");
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const fetchProducts = async () => {
-        const result = await axios.get('https://bezditniy.pythonanywhere.com/products/');
-        console.log(result.data)
-        setProducts(result.data)}
-    useEffect(() => {fetchProducts()}, []);
 
     const totalPrice = productItem.reduce((sum, obj) => Number(obj.totalPrice) + sum, 0)
     const quantityItems = productItem.reduce((sum, obj) => obj.count + sum, 0)

@@ -89,7 +89,7 @@ const App = () => {
     return (
 
       <div className="wrapper">
-        <NavBar productItem={items} onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} deleteFromCart={deleteFromCart}/>
+        <NavBar productItem={items} products={products} onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} deleteFromCart={deleteFromCart}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />}/>
